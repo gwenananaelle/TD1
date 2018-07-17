@@ -1,0 +1,14 @@
+{
+  "name": "td",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "stencil-dev-server --root src  --httpPort 8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stencil/dev-server": "0.0.18"
+  }
+}
