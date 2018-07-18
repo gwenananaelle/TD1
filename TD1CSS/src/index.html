@@ -7,92 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/movielist.js"></script>
+    <script src="scripts/global.js"></script>
 </head>
 <body>
     <header>
         <h1>Movies</h1>
     </header>
-    <main>
-        <div>
-            <img srcset="images/image1-330.jpg 330w, images/image1-215.jpg 215w" sizes="(max-width:480px) 215px, 330px"  alt="Indestructibles 2">
-            <h4>Indestructibles 2</h4>
+    <div id="myModal" class="hidden">
+        <div class="modalContent">
+            <h2 id="modalTitle"></h2>
+            <img id="modalPoster" srcset="" sizes="(max-width:480px) 215px, 330px" alt="">
+            <p id="modalSummary"></p>
+            <div id="buttonClose">close</div>
         </div>
-        <div>
-            <img srcset="images/image2-330.jpg 330w, images/image2-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Moonlight">
-            <h4>Moonlight</h4>
-        </div>
-        <div>
-            <img srcset="images/image3-330.jpg 330w, images/image3-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Shape of water">
-            <h4>Shape of water</h4>
-        </div>
-        <div>
-            <img srcset="images/image4-330.jpg 330w, images/image4-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Blade Runner">
-            <h4>Blade Runner</h4>
-        </div>
-        <div>
-            <img srcset="images/image5-330.jpg 330w, images/image5-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="L'Assassinat de Jesse James par le lâche Robert Ford">
-            <h4>L'Assassinat de Jesse James par le lâche Robert Ford</h4>
-        </div>
-        <div>
-            <img srcset="images/image1-330.jpg 330w, images/image1-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Indestructibles 2">
-            <h4>Indestructibles 2</h4>
-        </div>
-        <div>
-            <img srcset="images/image2-330.jpg 330w, images/image2-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Moonlight">
-            <h4>Moonlight</h4>
-        </div>
-        <div>
-            <img srcset="images/image3-330.jpg 330w, images/image3-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Shape of water">
-            <h4>Shape of water</h4>
-        </div>
-        <div>
-            <img srcset="images/image4-330.jpg 330w, images/image4-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Blade Runner">
-            <h4>Blade Runner</h4>
-        </div>
-        <div>
-            <img srcset="images/image5-330.jpg 330w, images/image5-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="L'Assassinat de Jesse James par le lâche Robert Ford">
-            <h4>L'Assassinat de Jesse James par le lâche Robert Ford</h4>
-        </div>
-        <div>
-            <img srcset="images/image1-330.jpg 330w, images/image1-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Indestructibles 2">
-            <h4>Indestructibles 2</h4>
-        </div>
-        <div>
-            <img srcset="images/image2-330.jpg 330w, images/image2-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Moonlight">
-            <h4>Moonlight</h4>
-        </div>
-        <div>
-            <img srcset="images/image3-330.jpg 330w, images/image3-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Shape of water">
-            <h4>Shape of water</h4>
-        </div>
-        <div>
-            <img srcset="images/image4-330.jpg 330w, images/image4-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Blade Runner">
-            <h4>Blade Runner</h4>
-        </div>
-        <div>
-            <img srcset="images/image5-330.jpg 330w, images/image5-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="L'Assassinat de Jesse James par le lâche Robert Ford">
-            <h4>L'Assassinat de Jesse James par le lâche Robert Ford</h4>
-        </div>
-        <div>
-            <img srcset="images/image1-330.jpg 330w, images/image1-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Indestructibles 2">
-            <h4>Indestructibles 2</h4>
-        </div>
-        <div>
-            <img srcset="images/image2-330.jpg 330w, images/image2-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Moonlight">
-            <h4>Moonlight</h4>
-        </div>
-        <div>
-            <img srcset="images/image3-330.jpg 330w, images/image3-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Shape of water">
-            <h4>Shape of water</h4>
-        </div>
-        <div>
-            <img srcset="images/image4-330.jpg 330w, images/image4-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="Blade Runner">
-            <h4>Blade Runner</h4>
-        </div>
-        <div>
-            <img srcset="images/image5-330.jpg 330w, images/image5-215.jpg 215w" sizes="(max-width:480px) 215px, 330px" alt="L'Assassinat de Jesse James par le lâche Robert Ford">
-            <h4>L'Assassinat de Jesse James par le lâche Robert Ford</h4>
-        </div>
+    </div>
+    <main id="container">   
     </main>    
 </body>
 </html>
