@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', event => {
     posterPlaceHolder = document.getElementById('modalPoster'),
     summary = document.getElementById('modalSummary'),
     buttonClose = document.getElementById('buttonClose')
+    populateList('data/list.json')
 });
 function closeModal() {
     document.removeEventListener('keydown',escapeKeyListener)
