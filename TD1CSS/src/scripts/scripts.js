@@ -1,12 +1,4 @@
 /**
- * Pour chaque film de la liste movieList, créée un élément div, lance createMovie() et ajoute le div au main
- */
-function populateList(){
-    movieList.forEach (element => {
-        createMovie(element)
-    }); 
-}
-/**
  * Permet d'ajouter un film à un élement du DOM
  * @param {objet film} element 
  * @param {élément du DOM} parent 

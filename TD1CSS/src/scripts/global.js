@@ -14,12 +14,9 @@ document.addEventListener('DOMContentLoaded', event => {
     posterPlaceHolder = document.getElementById('modalPoster'),
     summary = document.getElementById('modalSummary'),
     buttonClose = document.getElementById('buttonClose')
-    populateList()
 });
 function closeModal() {
     document.removeEventListener('keydown',escapeKeyListener)
     myModal.classList.toggle('hidden')
 }
 const escapeKeyListener = ({keyCode}) => keyCode === 27 && closeModal()
-
-//event =>{} ou (par)=>{}
