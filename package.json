@@ -5,14 +5,22 @@
   "main": "index.js",
   "scripts": {
     "serve": "stencil-dev-server --root src  --httpPort 8080",
-    "build": "grunt"
+    "build": "grunt",
+    "start": "serve dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@stencil/dev-server": "0.0.18"
+    "@stencil/dev-server": "0.0.18",
+    "serve": "^9.4.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.3"
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-json-minification": "^0.2.1"
   }
 }
