@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "stencil-dev-server --root src  --httpPort 8080"
+    "serve": "stencil-dev-server --root src  --httpPort 8080",
+    "build": "grunt"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@stencil/dev-server": "0.0.18"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3"
   }
 }
